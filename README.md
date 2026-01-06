@@ -1,6 +1,5 @@
 # Dataviz_TD_FR
 
-
 ## Importer un tableau de données
 
 J'ai crée un tableau .csv :
@@ -90,5 +89,21 @@ Maintenant si je rentre dans les bases `item` 1 à 4, chaque nuage de points est
 Finalement, pour les voir tous ensemble, je crée un `Layout` TOP, et dans le paramètre TOPs j'écris "item*/render1", afin de sélectionner le TOP render1 dans chaque base item.
 
 ![screen1](./images/screen11.png)
-# Dataviz_TD_FR
-# Dataviz_TD_FR
+
+## Faire vibrer les nuages de points
+
+![screen1](./images/gif1.gif)
+
+Pour faire vibrer les points, j'ai tout d'abord crée un `Null` CHOP que j'ai appelé "pos" (pour position), et que j'ai fait glisser pour remplacer sopto1 comme Translate OP dans les paramètres d'instanciation du Geo.
+
+Entre sopto1 et pos, j'ai crée un `Noise` CHOP et deux `Select` CHOP. 
+
+Le premier `Select` sert à sélectionner tz car je ne souhaite pas que les points bougent sur z, et va dans un `Merge` CHOP puis dans `pos`.
+
+Le second `Select` sert à séléctionner tx et ty, et va dans un `Math` CHOP avec le mode d'opération "Combine CHOP : Add".
+
+Je modifie les paramètres du `Noise` en mettant une amplitude basse (0.1 = ce qui fait que les points ne se déplacent pas trop), plus d'harmoniques (7 = les points ne se déplacent pas comme leurs voisins) et dans l'onglet Transform, j'écris "absTime.seconds" dans le déplacement z pour que les points bougent à une vitesse donnée.
+
+![screen1](./images/screen12.png)
+
+Ici les valeurs de "vibrations" (vitesse, amplitude, etc) ont été définis  

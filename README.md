@@ -106,4 +106,21 @@ Je modifie les paramètres du `Noise` en mettant une amplitude basse (0.1 = ce q
 
 ![screen1](./images/screen12.png)
 
+<<<<<<< Updated upstream
 Ici les valeurs de "vibrations" (vitesse, amplitude, etc) ont été définis  
+=======
+Ici les valeurs de "vibrations" (vitesse, amplitude, etc) ont été définis au hasard, mais elles pourraient également être dans mon tableau de données.
+
+Je peux éditer le tableau de données dans mon éditeur de tableur et le re-charger dans TD.
+
+![screen1](./images/screen13.png)
+
+Ensuite, il suffit de retourner dans `base1`, et appliquer l'amplitude et la vitesse aux paramètres du `Noise` CHOP, respectivement à l'amplitude et la période (plus le chiffre est grand, plus la vitesse est lente).
+
+![screen1](./images/screen14.png)
+
+Ensuite je sors de la Base, et sur le `Replicator` je clique sur le bouton "Recreate All Operators".
+
+![screen1](./images/gif2.gif)
+
+J'ai aussi ajouté des couleurs et ainsi de suite.

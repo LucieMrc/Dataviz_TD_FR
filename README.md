@@ -106,9 +106,6 @@ Je modifie les paramètres du `Noise` en mettant une amplitude basse (0.1 = ce q
 
 ![screen1](./images/screen12.png)
 
-<<<<<<< Updated upstream
-Ici les valeurs de "vibrations" (vitesse, amplitude, etc) ont été définis  
-=======
 Ici les valeurs de "vibrations" (vitesse, amplitude, etc) ont été définis au hasard, mais elles pourraient également être dans mon tableau de données.
 
 Je peux éditer le tableau de données dans mon éditeur de tableur et le re-charger dans TD.
